@@ -33,7 +33,7 @@ public class SwaggerConfig {
                 //服务条款网址
                 .termsOfServiceUrl("http://www.baidu.com/")
                 .version("1.0")
-                .contact(new Contact("纯洁的微笑", "http://www.baidu.com/", "mp@126.com"))
+                .contact(new Contact("mp", "http://www.baidu.com/", "mp@126.com"))
                 .build();
     }
 }
