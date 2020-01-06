@@ -16,7 +16,10 @@ public class RequestData implements Serializable {
     @ApiModelProperty(value = "企业密钥",dataType = "String",name = "",required =true,example = "appkey")
     @NotBlank(message = "企业密钥不能为空")
     private String  appkey;
-    @ApiModelProperty(value = "密文",dataType = "String",name = "",required =true,example = "sign")
+    @ApiModelProperty(value = "公司名称",dataType = "String",name = "",required =true,example = "companyName")
+    @NotBlank(message = "公司名称不能为空")
+    private String  companyName;
+    @ApiModelProperty(value = "密文",dataType = "String",name = "",required =true,example = "Y29tcGFueU5hbWU=")
     @NotBlank(message = "密文不能为空")
     private String  sign;
 
@@ -47,6 +50,14 @@ public class RequestData implements Serializable {
 
     public void setSign(String sign) {
         this.sign = sign;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
     public OrderData getOrderData() {
